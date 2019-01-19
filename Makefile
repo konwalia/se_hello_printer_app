@@ -1,10 +1,11 @@
+.PHONY: test
+
 deps:
-				pip install -r requirments.txt; \
-				pip install -r test_requirments.txt
+	pip install -r requirements.txt; \
+	pip install -r test_requirements.txt
 
 lint:
-				flake8 hello_world test
+	flake8 hello_world test
 
 test:
-				PYTHONPATH=.py.test	--verbose -s
-				
+	PYTHONPATH=. py.test	--verbose -s
