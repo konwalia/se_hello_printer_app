@@ -15,8 +15,4 @@
 	  	FLASK_APP=hello_world flask run --host=0.0.0.0
 
 
-            docker_run: docker_build
-                docker run \
-                  --name hello-world-printer-dev \
-                    -p 5000:5000 \
-                    -d hello-world-printer
+            
